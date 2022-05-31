@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Ubuntu", "sans-serif";
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+html{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    height: 100vh;
+    background: url(/images/BG.png) center;
+    background-size: cover;    
+}
+
+.profile-card{
+    width: 550px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 100px;   
+}
+
+
+.card-header{
+    background: rgb(55, 55, 57);
+    padding: 60px 40px;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+}
+
+.profile-pic{
+    display: inline-block;
+    padding: 8px;
+    margin: auto;
+    border-radius: 50%;
+    background: linear-gradient(130deg, #ebf92a, #e66767);
+    background-size: 200% 200%;
+    animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient{
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{
+        background-position: right top;
+    }
+    100%{
+        background-position: left top;
+    }
+
+}
+
+.profile-pic img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.name {
+    color: #f2f2f2;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.title {
+    font-size: 18px;
+    color: #e66767;
+    margin: 5px;
+}
+
+.sm a{
+    color:#f2f2f2;
+    width:56px;
+    font-size: 25px;
+    transition: .3s linear;
+}
+
+.sm a:hover{
+    color: #e66767;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 15px 50px;
+    color:#e66767;
+    border:2px solid #e66767;
+    border-radius: 10px;
+    margin-top: 15px;
+    transition: .3s linear;
+}
+
+.contact-btn:hover{
+    background: #e66767;
+    color: #f2f2f2;
+}
+
+.card-footer{
+    background: #f4f4f4;
+    padding: 50px 10px;
+
+}
+
+/*this is creating a single pixel gap for some reason.*/
+/* .card-footer:last-child{    
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+} */
+
+.work {
+    display: flex;
+    align-items: center;
+}
+
+.item {
+    flex: 1;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #e66767;
+
+}
+
+.item span{
+    display:block;
+    color: #2c3a47;
+    font-size: 30px;
+}
+
+.border{
+    width: 2px;
+    height: 30px;
+    background: rgb(55, 55, 57);
+}
+
+
+
+
+.about {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.about h2{
+    padding: 10px 0;
+
+}
+
+
+
+
+
+.project{
+    display: inline-block;
+    color: #2c3a47;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.project img{
+    width: 500px;
+}
+
+.project a{
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.project .fa-github{
+    padding-left: 15px;
+}
