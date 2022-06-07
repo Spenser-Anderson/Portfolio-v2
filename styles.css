@@ -180,3 +180,8 @@ body{
 .project .fa-github{
     padding-left: 15px;
 }
+
+.card-end{
+    background: rgb(55, 55, 57);
+    margin-bottom: 15px;
+}
